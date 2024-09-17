@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Cloning Git') {
             steps {
-                git 'https://github.com/aryamannkhare8/dso-lab-6.git'
+                git 'https://github.com/aryamannkhare8/dso-lab-6.git', branch: 'main'
             }
         }
         stage('Building Docker Image') {
